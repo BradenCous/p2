@@ -36,3 +36,105 @@
     transform: rotate(360deg);
   }
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #4d8587;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+#song-bank {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 95vw;
+  min-height: 60px;
+  outline-style: solid;
+  background-color: grey;
+  align-items: center;
+  max-width: 1000px;
+
+}
+#playlist-bank {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  width: 95vw;
+  min-height: 60px;
+  outline-style: solid;
+  background-color: orange;
+  align-items: center;
+  max-width: 1000px;
+}
+
+#search-bar {
+  display: flex;
+  margin: 10px;
+  flex-direction: row;
+  width: 95vw;
+  height: 50px;
+  outline-style: solid;
+  background-color: yellow;
+  align-items: center;
+  max-width: 1000px;
+  justify-content: center;
+  
+}
+
+#song-search, #artist-search, #album-search {
+  margin: 20px;
+}
+
+.PlaylistItem {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  align-items: center;
+  height: 50px;
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: #84bd00;
+  color: white;
+  text-shadow: 0 0 8px black;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  padding-left: 20px;
+
+}
+
+.PlaylistItem > .title {
+  display: flex;
+  margin: 50px;
+  padding: 30px;
+}
+
+#artist {
+  display: flex;
+  /* background-color: red; */
+  width: 33%;
+  padding-left: 10px;
+}
+
+#title {
+  display: flex;
+  /* background-color: yellow; */
+  width: 33%;
+  padding-left: 10px;
+}
+
+#album {
+  display: flex;
+  /* background-color: blue; */
+  width: 33%;
+  padding-left: 10px;
+  
+}
