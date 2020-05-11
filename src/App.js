@@ -42,7 +42,12 @@ function Playlists() {
     setPlaylists(playlists.push(arrPlaylists));
   }
 
-
+  const api_url = '/api/playlists';
+  async function fetchstuff() {
+    const response = await fetch(api_url);
+    const data = await response.json();
+    console.log(data);
+  }
   
 
   return(
@@ -55,6 +60,8 @@ function Playlists() {
         {playlists.map(plInfo => <Playlist key={plInfo.title} plInfo={plInfo} add={populatePage}/>)}
       </div>
       
+      <button onClick={fetchstuff}>API</button>
+
     </div>
   );
 }
