@@ -138,3 +138,15 @@
   padding-left: 10px;
   
 }
+
+#playlist-home-container {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  width: 95vw;
+  min-height: 60px;
+  outline-style: solid;
+  background-color: orange;
+  align-items: center;
+  max-width: 1000px;
+}

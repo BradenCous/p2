@@ -1,4 +1,4 @@
-export default function albums(state = [], action = {}) {
+export default function playlists(state = [], action = {}) {
     switch(action.type) {
         default: return state;
     }
