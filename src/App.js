@@ -42,7 +42,7 @@ function Playlists() {
     setPlaylists(playlists.push(arrPlaylists));
   }
 
-  const api_url = '/api/playlists';
+  const api_url = 'https://api.wheretheiss.at/v1/satellites/25544/';
   async function fetchstuff() {
     const response = await fetch(api_url);
     const data = await response.json();
